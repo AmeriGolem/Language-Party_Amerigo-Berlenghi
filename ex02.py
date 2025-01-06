@@ -1,20 +1,11 @@
+from function_def import get_number
+
 print("quel opération voulez-vous faire? veuillez choisir entre: +, -, *, /")
 operation = input()
 while operation not in ["+","-","*","/"]:
     print("Vous n'avez pas choisis une opération valide.")
     print("quel opération voulez-vous faire? veuillez choisir entre: +, -, *, /")
     operation = input()
-
-def get_number()-> int:
-    while True:
-        print("Veuillez choisir un nombre")
-        nombre_str = input()
-        try:
-            nombre_float = float(nombre_str)
-            break
-        except ValueError:
-            print(f"Votre choix n'est pas valide.")
-    return nombre_float
 
 print("choix du premier nombre:")
 nombre_1 = get_number()

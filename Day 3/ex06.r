@@ -6,3 +6,5 @@ etudiant = data.frame(
 
 print(subset(etudiant, select=c("Nom", "Note")))
 print(subset(etudiant, Note >= 15 ))
+
+

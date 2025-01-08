@@ -8,5 +8,9 @@ employes = data.frame(
 employes_IT = filter(employes, Departement == "IT")
 print(employes_IT)
 
-mean_salary = group_by(employes, mean)
-mean_salary
+mean_salary = summarise(
+  group_by(employes,Departement),
+  MeanSalary = mean(Salaire)
+)
+
+employes[order(employes$Salaire, decreasing = TRUE),]

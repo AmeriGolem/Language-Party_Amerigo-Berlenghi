@@ -1,3 +1,5 @@
+// from https://www.freecodecamp.org/news/make-api-calls-in-javascript/
+
 // Define the API URL
 const apiUrl = 'https://official-joke-api.appspot.com/random_joke';
 

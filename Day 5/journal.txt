@@ -1,0 +1,3 @@
+Aujourd'hui est un beau jour.
+J'apprends le Bash.
+Le Bash est très puissant.
